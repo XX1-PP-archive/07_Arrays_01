@@ -22,13 +22,30 @@
 // }
 
 /* For-Schleife für Array-Index (Iteration)*/
-let arr = ["Ich","bin","der","coole","Max","Mütze"];
-for (let i = 0; i < arr.length; i++) {
-    ausgabe(arr[i]); 
+// let arr = ["Ich","bin","der","coole","Max","Mütze"];
+// for (let i = 0; i < arr.length; i++) {
+//     ausgabe(arr[i]); 
+// }
+
+/*** 02b. Funktionalität mit Array 2 */
+ausgabe(getSentenceArr2(["Ich","bin","Max","Mütze"])); // Test
+function getSentenceArr2(arr) {
+    let gap = " ";
+    let punct = ".";
+    // let str =   arr[0] + gap +
+    //             arr[1] + gap +
+    //             arr[2] + gap +
+    //             arr[3] + 
+    //             punct;
+
+    for (let i = 0; i < arr.length; i++) {
+        ausgabe(arr[i]); 
+    }
+
+    return "test";
 }
 
-
-/*** 02a. Funktionalität mit Array  */
+/*** 02a. Funktionalität mit Array 1  */
 // Kritik | Überlegung
 // word1,word2, .... word100  :: Semantische Struktur
 // arr[0],arr[1] ... arr[n] :: Numerische Struktur (0,1,2,3 ... n)
